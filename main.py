@@ -41,7 +41,7 @@ entry1.pack()
 button1.pack()
 button2.pack()
 button3.pack()
-#Dev Branch Only.
+
 root.geometry("500x400")
 root.title("Guest Book")
 root.mainloop()
