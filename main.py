@@ -1,5 +1,6 @@
 import tkinter as tk
 import os
+import webbrowser
 
 root = tk.Tk()
 def load():
@@ -33,15 +34,19 @@ def save():
     buttonRoot2.pack()
     root2.geometry("200x50")
     root2.mainloop()
+def openGithub():
+    webbrowser.open("https://www.github.com/JackTheWebDev/GuestBook")
 
 text1 = tk.Label(root,text="Please Enter your name.")
 entry1 = tk.Entry(root)
 button2 = tk.Button(root,text="Load Names",command=load)
 button3 = tk.Button(root,text="Save Names",command=save)
+button4 = tk.Button(root,text="Open Github",command=openGithub)
 text1.pack()
 entry1.pack()
 button2.pack()
 button3.pack()
+button4.pack()
 
 root.geometry("500x400")
 root.title("Guest Book")
