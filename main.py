@@ -2,7 +2,6 @@ import tkinter as tk
 import os
 
 root = tk.Tk()
-# Add elements here
 def callback():
     name = entry1.get()
     text2 = tk.Label(root,text=name)
